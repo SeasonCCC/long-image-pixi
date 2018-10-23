@@ -26,11 +26,8 @@ const render = {
     spritesheet.parse(textures => {
       // render fountain
       let textureArray = [textures['fountain1.png'], textures['fountain2.png']]
-      // console.log(textureArray)
       this.fountainSprite = new PIXI.extras.AnimatedSprite(textureArray)
-      // console.log(this.fountainSprite)
       this.fountainSprite.setTransform(-150, -1338 + stageY)
-      // console.log(this.fountainSprite.currentFrame)
       this.fountainSprite.animationSpeed = 0.05
       this.fountainSprite.gotoAndStop(0)
       this.container.addChild(this.fountainSprite)
